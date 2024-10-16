@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-body">
+        <p-menubar [model]="subject" >
+            <ng-template pTemplate="start">
+                <img src="https://t4.ftcdn.net/jpg/03/30/25/47/360_F_330254723_AQ0xho8Ch69OykAcjwT4V1PA0A6xPzjP.jpg" alt="logo">
+                <h2 >DRAMA</h2>
+            </ng-template>
+
+            <ng-template pTemplate="end">
+                <p-iconField iconPosition="right">
+                    <p-inputIcon styleClass="pi pi-search" />
+                    <input type="text" pInputText placeholder="Search" />
+                </p-iconField>
+            </ng-template>
+        </p-menubar>
+    </div>
+</div>

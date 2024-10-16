@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<div class="card">
+    <p-galleria 
+        [value]="images" 
+        [numVisible]="5" 
+        [circular]="true" 
+        [showItemNavigators]="true" 
+        [showThumbnails]="false" 
+        [responsiveOptions]="responsiveOptions" 
+        [containerStyle]="{ 'max-width': '2000px' ,'max-height':'100px'}">
+            <ng-template pTemplate="item" let-item>
+                <img [src]="item.itemImageSrc" style="width: 100%;" />
+            </ng-template>
+    </p-galleria>
+</div>

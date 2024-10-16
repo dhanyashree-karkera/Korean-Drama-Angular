@@ -1,0 +1,15 @@
+::ng-deep .p-card{
+    background-color: rgb(225, 231, 231);
+}
+::ng-deep .p-card:hover{
+    background-color: rgb(247, 205, 205);
+}
+
+::ng-deep .p-card-title{
+    color: black;
+}
+
+h4{
+    color: #143a7f;
+}
+

@@ -1,0 +1,29 @@
+ ::ng-deep .p-menubar{
+   background-color: black;
+}
+
+::ng-deep .p-menuitem-text{
+    color:white;
+ }
+
+ ::ng-deep .p-menuitem-content:hover{
+    background: none !important;
+    color: none ;
+ }
+ ::ng-deep .p-menubar-end{
+    padding: inherit;
+    margin-left: 1rem;
+ }
+
+ ::ng-deep .p-menubar-start{
+   display: flex;
+ }
+
+ h2{
+    color: rgb(234, 234, 245);
+    margin-right: 3rem;
+ }
+ .card img {
+   width: 80px; 
+   height: auto; 
+}

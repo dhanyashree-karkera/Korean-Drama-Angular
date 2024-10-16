@@ -1,0 +1,24 @@
+::ng-deep .p-card{
+    background-color: rgb(23, 24, 24);
+    width: 80%;
+}
+
+::ng-deep .p-card-title{
+    color: #eee2e2;
+}
+
+label{
+    color: hsl(0, 50%, 98%);
+    font-size: large;
+}
+
+.container{
+    display: flex;
+    gap: 2rem;
+}
+.btn{
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    gap: 1rem;
+}
