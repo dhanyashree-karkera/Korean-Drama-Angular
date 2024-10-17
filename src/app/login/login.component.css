@@ -1,0 +1,22 @@
+::ng-deep .p-card-content{
+    display: grid;
+    justify-content: center;
+}
+ .text-center{
+    margin-top: 10rem;
+
+    background-color: #FAFAFA;
+    box-shadow: 15px 15px 5px #adcee6;
+}
+
+
+::ng-deep .p-card-title{
+    display: grid;
+    justify-content: center;
+    }
+
+::ng-deep .p-element{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}

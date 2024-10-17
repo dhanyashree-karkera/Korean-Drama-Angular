@@ -7,8 +7,7 @@ import { InputIconModule } from 'primeng/inputicon';
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputTextModule } from 'primeng/inputtext';
 import { FormsModule } from '@angular/forms';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { BrowserModule } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -36,9 +35,10 @@ export class HeaderComponent {
               routerLink:'/about'
           },
           {
-              label: 'Services',
+              label: 'Dramas',
               icon: 'pi pi-asterisk',
-              style:{ 'color':'white'}
+              style:{ 'color':'white'},
+              routerLink:'/dramas'
           },
           {
               label: 'Contact',
@@ -47,5 +47,11 @@ export class HeaderComponent {
               routerLink:'/contact'
           }
       ]
+  }
+
+  constructor(private router: Router){}
+
+  logout(){
+    this.router.navigate(['login'])
   }
 }

@@ -27,3 +27,7 @@
    width: 80px; 
    height: auto; 
 }
+   ::ng-deep .p-menubar-end{
+      display: flex; 
+      gap: 8rem;
+   }

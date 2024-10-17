@@ -1,0 +1,25 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class="card flex justify-content-center" style="display: grid; justify-content: center;">
+        <p-card header="Login" class="text-center" [style]="{width:'30rem'}">
+            <div class="field">
+                <p-floatLabel>
+                    <input type="text" pInputText id="username" formControlName="username"/>
+                    <label for="username">Username</label>
+                </p-floatLabel>
+            </div>
+
+            <div class="field" style="margin-top: 2rem;">
+                <p-floatLabel>
+                    <input type="password" pInputText id="password" formControlName="password"/>
+                    <label for="password">Password</label>
+                </p-floatLabel>
+            </div>
+
+            <div style="margin-top: 1rem;">
+                <p-button label="Login" styleClass="w-full" type="submit"></p-button>
+            </div>
+        </p-card>
+    </div>
+</form>
+
+<div style="display: grid; justify-content: center; margin-top: 1rem; color: red;"  *ngIf="errorMessage" class="error-message">{{ errorMessage }} </div>
