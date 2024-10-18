@@ -1,0 +1,28 @@
+.drama{
+    border: 1px solid black;
+    background-color: #b1a79a;
+    transition: transform 0.5s ease;
+}
+.drama:hover{
+    transform: scale(1.1);
+    background-color: #c4d4e2;
+}
+
+/* .drama img {
+    transition: transform 0.5s ease;
+} */
+
+/* .drama img:hover {
+    transform: scale(1.1);
+} */
+
+.image{
+    margin-top: 1rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;   
+}

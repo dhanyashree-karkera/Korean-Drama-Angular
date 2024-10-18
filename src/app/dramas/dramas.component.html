@@ -1,3 +1,10 @@
 <app-header></app-header>
 
-<p>dramas works!</p>
+<div class="container" >
+    @for (item of data; track item.imdbID) {
+        <div class="drama" >
+            <img class="image" src="{{item.Poster}}" alt="{{item.Title}} Poster" />
+            <h4 style="text-align: center;">{{item.Title}}</h4>
+        </div>
+    }
+</div>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from "../header/header.component";
-import {data} from "../data/data";
+import { MovieService } from '../service/movie.service';
+// import {data} from "../data/data";
 
 @Component({
   selector: 'app-dramas',
@@ -10,9 +11,23 @@ import {data} from "../data/data";
   styleUrl: './dramas.component.css'
 })
 export class DramasComponent {
+  data:any[]=[];
 
-  ngOnInit(){
-    console.log(data);
+
+
+  constructor(private movieService:MovieService){}
+
+  ngOnInit():void{
+    this.fetchData()
     
   }
+
+  fetchData() {
+    this.movieService.getMovies().subscribe((dhanya) => {
+        this.data=dhanya.Search;
+        console.log(this.data);
+    })
+  }
 }
+
+
